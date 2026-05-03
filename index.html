@@ -1,50 +1,74 @@
-<h2>Contact Form</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PA01 Part 2 - Forms and Tables</title>
+</head>
+<body>
 
-<form>
-  First Name: <input type="text" name="firstName"><br><br>
-  Last Name: <input type="text" name="lastName"><br><br>
-  Email: <input type="email" name="email"><br><br>
-  Password: <input type="password" name="password"><br><br>
+  <h1>PA01 Part 2: HTML Forms and Tables</h1>
+  <p>This page demonstrates an HTML form and a structured table.</p>
 
-  Do you like our site?<br>
-  <input type="radio" name="like" value="yes"> Yes
-  <input type="radio" name="like" value="no"> No<br><br>
+  <h2>Student Information Form</h2>
 
-  <input type="checkbox"> Subscribe to newsletter<br><br>
+  <form>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required><br><br>
 
-  Which browser do you use?
-  <select>
-    <option>Chrome</option>
-    <option>Firefox</option>
-    <option>Edge</option>
-  </select><br><br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required><br><br>
 
-  <input type="submit" value="Submit">
-</form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
 
-<hr>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
 
-<h2>Favorite Movies</h2>
+    <p>Do you like this site?</p>
+    <input type="radio" id="yes" name="likeSite" value="yes">
+    <label for="yes">Yes</label>
 
-<table border="1">
-  <tr>
-    <th>Movie</th>
-    <th>Genre</th>
-    <th>Year</th>
-  </tr>
-  <tr>
-    <td>Inception</td>
-    <td>Sci-Fi</td>
-    <td>2010</td>
-  </tr>
-  <tr>
-    <td>Avengers</td>
-    <td>Action</td>
-    <td>2012</td>
-  </tr>
-  <tr>
-    <td>Interstellar</td>
-    <td>Sci-Fi</td>
-    <td>2014</td>
-  </tr>
-</table>
+    <input type="radio" id="no" name="likeSite" value="no">
+    <label for="no">No</label><br><br>
+
+    <input type="checkbox" id="subscribe" name="subscribe">
+    <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+    <label for="browser">Which browser do you use?</label>
+    <select id="browser" name="browser">
+      <option value="chrome">Chrome</option>
+      <option value="firefox">Firefox</option>
+      <option value="edge">Microsoft Edge</option>
+      <option value="safari">Safari</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2>Weekly Class Schedule</h2>
+
+  <table border="1">
+    <tr>
+      <th>Day</th>
+      <th>Course</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td>Computer Science</td>
+      <td>10:00 AM</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>Web Development</td>
+      <td>12:30 PM</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>Database Systems</td>
+      <td>2:00 PM</td>
+    </tr>
+  </table>
+
+</body>
+</html>
